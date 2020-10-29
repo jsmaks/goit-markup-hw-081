@@ -1,0 +1,42 @@
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  .header & {
+    display: flex;
+    align-items: center;
+  }
+
+  .portfolio & {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .clients & {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .features & {
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
+  .footer & {
+    display: flex;
+    align-items: center;
+  }
+  .start-page & {
+    padding-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .team & {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .we-doing & {
+    padding-top: 47px;
+    padding-bottom: 94px;
+  }
+}

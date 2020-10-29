@@ -1,0 +1,14 @@
+.logo {
+  font-family: $secondary-font;
+  font-size: 26px;
+  line-height: 1.19;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin-right: 93px;
+
+  &-color {
+    color: #2196f3;
+  }
+}

@@ -553,7 +553,10 @@ img {
     display: none;
   }
   .header {
-    position: relative;
+    position: fixed;
+    z-index: 1000;
+    background-color: white;
+    width: 100%;
   }
   .menu-button {
     display: inline-flex;

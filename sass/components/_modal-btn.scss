@@ -21,3 +21,8 @@
   border-radius: 4px;
   margin: 0 auto;
 }
+@media screen and (max-width: 767px) {
+  .modal-btn {
+    padding: 10px 25px;
+  }
+}

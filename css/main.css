@@ -342,6 +342,9 @@ img {
     width: 768px;
     margin: 0 auto;
   }
+  .features .container {
+    padding: 60px 15px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -976,6 +979,17 @@ body.modal-open {
   padding: 25px 190px;
 }
 
+@media screen and (min-width: 768px) {
+  .svg-container {
+    width: 354px;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    padding: 25px 142px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .svg-container {
     width: 270px;
@@ -1324,11 +1338,39 @@ body.modal-open {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
-  min-width: 450px;
+  max-width: 450px;
 }
 
 .features-list-item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .features-list-item > h3 {
+    text-align: left;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #212121;
+  }
+  .features-list-item > p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: #757575;
+    max-width: 354px;
+  }
+  .features-list-item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

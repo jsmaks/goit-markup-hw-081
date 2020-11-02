@@ -343,6 +343,9 @@ img {
     width: 768px;
     margin: 0 auto;
   }
+  .features .container {
+    padding: 60px 15px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

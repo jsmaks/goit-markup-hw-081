@@ -1,16 +1,36 @@
-.active::after {
-  content: '';
-  display: block;
-  height: 5px;
-  width: 100%;
+@media screen and (max-width: 767px) {
+  .active::after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
 
-  left: 0;
-  bottom: -30px;
+    left: 0;
+    bottom: -8px;
 
-  position: absolute;
-  background-color: $accent-color;
-  border-radius: 4px;
+    position: absolute;
+    background-color: $accent-color;
+    border-radius: 4px;
+  }
+  .active {
+    color: $accent-color;
+  }
 }
-.active {
-  color: $accent-color;
+@media screen and (min-width: 1200px) {
+  .active::after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+
+    left: 0;
+    bottom: -30px;
+
+    position: absolute;
+    background-color: $accent-color;
+    border-radius: 4px;
+  }
+  .active {
+    color: $accent-color;
+  }
 }

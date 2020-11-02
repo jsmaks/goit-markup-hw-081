@@ -1,70 +1,140 @@
-.header {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  border: 1px solid #eeeeee;
+//-------------------------------------------------------------//
+//-------------------------------------------------------------//
+@media screen and (min-width: 767px) {
+  .menu-button {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .menu-navigation {
+    display: none;
+  }
+  .header {
+    position: relative;
+  }
 
-  .address {
+  .menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
     margin-left: auto;
+    background-color: transparent;
+    // @media screen and (min-width: 768px) {
+    //   display: none;
+    // }
   }
-}
-
-.address-list {
-  display: flex;
-  &-item:not(:last-child) {
-    margin-right: 30px;
+  .menu-button .icon-cross {
+    width: 18px;
+    height: 18px;
+    display: none;
   }
-}
-.address-icon {
-  margin-right: 10px;
-  fill: $color-text-grey;
-}
+  .menu-button.is-open .icon-cross {
+    display: block;
+  }
 
-.navigation {
-  display: flex;
-  align-items: center;
-  &__list {
-    display: flex;
-    &-item:not(:last-child) {
-      margin-right: 50px;
+  .menu-button.is-open .icon-menu {
+    display: none;
+  }
+
+  .menu-navigation {
+    text-align: center;
+  }
+  //-----------------------------------------------------------------------
+  .menu-container {
+    position: absolute;
+    z-index: 999;
+    padding-top: 60px;
+    background-color: white;
+
+    text-align: center;
+    font-size: 20px;
+
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+
+    &.is-open {
+      display: block;
+      height: 400px;
+      & .menu-navigation {
+        display: inline-block;
+      }
     }
+  }
+  .navigation {
+    display: flex;
+    align-items: center;
 
-    &-link {
-      position: relative;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.143;
-      letter-spacing: 0.02em;
-      color: $color-text-title;
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    height: 60px;
+  }
+  .address-list {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
 
-      &:hover,
-      &:focus {
-        color: $accent-color;
+    &-item:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+  .address-icon {
+    margin-right: 10px;
+    fill: $color-text-grey;
+  }
+
+  .navigation {
+    // display: flex;
+
+    align-items: center;
+    &__list {
+      margin-bottom: 60px;
+      &-item:not(:last-child) {
+        margin-bottom: 40px;
+        // position: relative;
+      }
+
+      &-link {
+        position: relative;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+        color: $color-text-title;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+          color: $accent-color;
+        }
+      }
+    }
+  }
+  .header-address-link {
+    // display: flex;
+    // align-items: center;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: $color-text-grey;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    & svg {
+      fill: #afb1b8;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      & svg {
+        fill: $accent-color;
       }
     }
   }
 }
-.header-address-link {
-  display: flex;
-  align-items: center;
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.02em;
-  color: $color-text-grey;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  & svg {
-    fill: #afb1b8;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &:hover,
-  &:focus {
-    color: $accent-color;
-    & svg {
-      fill: $accent-color;
-    }
-  }
-}
+//--------Стили Хеадера для Десктопа-----//
+@import '../base/desktop/desktop';
+//---------------------------------------//

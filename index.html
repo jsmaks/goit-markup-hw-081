@@ -16,62 +16,110 @@
   </head>
   <body>
     <!--Header-->
-    <header class="header">
-      <div class="container">
-        <nav class="navigation">
+<header class="header">
+      
+  <div class="container">
+    <div class="page-header">
+        <div class="navigation">
           <a class="logo link" href="./index.html" aria-label="Логотип студии"
             ><span class="logo-color" lang="en">Web</span
             ><span lang="en">Studio</span></a
           >
-          <!--menu nav-->
-
-          <ul class="navigation__list list">
-            <li class="navigation__list-item">
-              <a class="navigation__list-link link active" href="./index.html"
-                >Студия</a
+        
+        <button 
+            type="button" 
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container" 
+            data-menu-button
+            >
+              <svg 
+              width="18px" 
+              height="18px"
+              aria-label="Переключатель мобильного меню"
               >
-            </li>
-            <li class="navigation__list-item">
-              <a class="navigation__list-link link" href="./portfolio.html"
-                >Портфолио</a
-              >
-            </li>
-            <li class="navigation__list-item">
-              <a class="navigation__list-link link" href="./cont.html"
-                >Контакты</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <address class="address">
-          <ul class="address-list list">
-            <li class="address-list-item">
-              <a
-                class="header-address-link link"
-                href="mailto:info@devstudio.com"
-              >
-                <svg class="address-icon" width="16px" height="12px">
-                  <use href="./images/icons/sprite.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="address-list-item">
-              <a class="header-address-link link" href="tel:+380961111111">
-                <svg class="address-icon" width="10px" height="16px">
-                  <use href="./images/icons/sprite.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
-      </div>
+                <use class="icon-cross" href="./images/icons/sprite-modal.svg#icon-close-menu"></use>
+                <use class="icon-menu" href="./images/icons/sprite-modal.svg#icon-menu" ></use>
+              </svg>
+              </button>
+              <div class="menu-container" id="menu-container" data-menu>
+                <div class="menu-navigation">
+                  <ul class="navigation__list list">
+                    <li class="navigation__list-item">
+                      <a class="navigation__list-link link active" href="./index.html">Студия</a>
+                    </li>
+                    <li class="navigation__list-item">
+                      <a class="navigation__list-link link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="navigation__list-item">
+                      <a class="navigation__list-link link" href="./cont.html">Контакты</a>
+                    </li>
+                  </ul>
+                  <address class="address">
+                    <ul class="address-list list">
+                      <li class="address-list-item">
+                        <a class="header-address-link link" href="mailto:info@devstudio.com">
+                          <svg class="address-icon" width="16px" height="12px">
+                            <use href="./images/icons/sprite.svg#icon-envelope"></use>
+                          </svg>
+                          info@devstudio.com</a>
+                      </li>
+                      <li class="address-list-item">
+                        <a class="header-address-link link" href="tel:+380961111111">
+                          <svg class="address-icon" width="10px" height="16px">
+                            <use href="./images/icons/sprite.svg#icon-smartphone"></use>
+                          </svg>
+                          +38 096 111 11 11</a>
+                      </li>
+                    </ul>
+                  </address>
+                </div>
+                
+                
+              
+              
+          
+    <!-- <div class="menu-navigation">
+            <ul class="navigation__list list">
+                <li class="navigation__list-item">
+                  <a class="navigation__list-link link active" href="./index.html">Студия</a>
+                </li>
+                <li class="navigation__list-item">
+                  <a class="navigation__list-link link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="navigation__list-item">
+                  <a class="navigation__list-link link" href="./cont.html">Контакты</a>
+                </li>
+            </ul>
+            <address class="address">
+              <ul class="address-list list">
+                <li class="address-list-item">
+                  <a class="header-address-link link" href="mailto:info@devstudio.com">
+                    <svg class="address-icon" width="16px" height="12px">
+                      <use href="./images/icons/sprite.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com</a>
+                </li>
+                <li class="address-list-item">
+                  <a class="header-address-link link" href="tel:+380961111111">
+                    <svg class="address-icon" width="10px" height="16px">
+                      <use href="./images/icons/sprite.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11</a>
+                  </li>
+                </ul>
+            </address>
+    </div> -->
+          
+  </di>
+    </div>
+    </div>
+  </div>
     </header>
     <!--HERO-->
     <main>
-      <section class="start-page">
-        <div class="start-page-container container">
+      <section class="hero">
+        <div class="hero-page container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button class="modal-btn" type="button" data-modal-open>
             Заказать услугу
@@ -125,8 +173,14 @@
                       
                       <label class="text-policy label">
                         <input class="checkbox visually-hidden" type="checkbox" name="policy" value="accept-policy">
-                        <span class="icon-checked"></span>
-                        <span class="label-text">Соглашаюсь с рассылкой и принимаю <a href="#" style="color: #2196f3">Условия договора</a></span>
+                        <span class="icon-checked">
+
+
+                          
+
+                    </span>
+                        <span class="label-text">Соглашаюсь с рассылкой и принимаю <a href="#" style="color: #2196f3"
+                          >Условия договора</a></span>
                         
                       </label>
                       
@@ -147,7 +201,7 @@
           </div>
         </div>
       </section>
-      <section class="features">
+      <!-- <section class="features">
         <h2 hidden>Особености</h2>
         <div class="features-container container">
           <ul class="features-list">
@@ -201,9 +255,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--What are we doing-->
-      <section class="we-doing">
+      <!-- <section class="we-doing">
         <div class="we-doing container">
           <h2>Чем мы занимаемся</h2>
           <ul class="we-doing-list list">
@@ -242,21 +296,26 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--About Team-->
-      <section class="team">
+        <!-- <section class="team">
         <div class="team-container container">
           <h2>Наша Команда</h2>
           <ul class="team-list list">
             <li class="team-list-item">
-              <!-- <a class="team-list-link link" href=""> -->
-              <img
-                class="team-list-card"
-                src="./images/main/photocard1.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
+
+              <picture>
+                <source srcset="./images/main/photocard1-desktop.jpg 1x, ./images/main/photocard1-desktop@2x.jpg 2x" media="(min-width:1200px)">
+                  <source srcset="./images/main/photocard1-tablet.jpg 1x, ./images/main/photocard1-tablet@2x.jpg 2x" media="(min-width:768px)">
+                    <source srcset="./images/main/photocard1-mobile.jpg 1x, ./images/main/photocard1-mobile@2x.jpg 2x" media="(min-width:320px)">
+              <img 
+               
+              class="team-list-card"
+              src="./images/main/photocard1-mobile.jpg" 
+              alt="Игорь Демьяненко" 
               />
+              </picture>
+              
               <h3>Игорь Демьяненко</h3>
               <p lang="en">Product Designer</p>
               <div class="social-links-team">
@@ -301,14 +360,20 @@
               </div>
             </li>
             <li class="team-list-item">
-              <!-- <a class="team-list-link link" href=""> -->
-              <img
+              <picture>
+                <source srcset="./images/main/photocard2-desktop.jpg 1x, ./images/main/photocard2-desktop@2x.jpg 2x"
+                  media="(min-width:1200px)">
+                <source srcset="./images/main/photocard2-tablet.jpg 1x, ./images/main/photocard2-tablet@2x.jpg 2x"
+                  media="(min-width:768px)">
+                <source srcset="./images/main/photocard2-mobile.jpg 1x, ./images/main/photocard2-mobile@2x.jpg 2x"
+                  media="(min-width:320px)">
+
+              <img 
                 class="team-list-card"
-                src="./images/main/photocard2.jpg"
+                src="./images/main/photocard2-mobile.jpg"
                 alt="Ольга Репина"
-                width="270"
-                height="260"
               />
+              </picture>
               <h3>Ольга Репина</h3>
               <p lang="en">Frontend Developer</p>
               <div class="social-links-team">
@@ -353,14 +418,20 @@
               </div>
             </li>
             <li class="team-list-item">
-              <!-- <a class="team-list-link link" href=""> -->
-              <img
+            <picture>
+              <source srcset="./images/main/photocard3-desktop.jpg 1x, ./images/main/photocard3-desktop@2x.jpg 2x"
+                media="(min-width:1200px)">
+              <source srcset="./images/main/photocard3-tablet.jpg 1x, ./images/main/photocard3-tablet@2x.jpg 2x"
+                media="(min-width:768px)">
+              <source srcset="./images/main/photocard3-mobile.jpg 1x, ./images/main/photocard3-mobile@2x.jpg 2x"
+                media="(min-width:320px)">
+
+              <img 
                 class="team-list-card"
-                src="./images/main/photocard3.jpg"
+                src="./images/main/photocard3-mobile.jpg"
                 alt="Николай Тарасов"
-                width="270"
-                height="260"
               />
+              </picture>
               <h3>Николай Тарасов</h3>
               <p lang="en">Marketing</p>
               <div class="social-links-team">
@@ -405,14 +476,20 @@
               </div>
             </li>
             <li class="team-list-item">
-              
-              <img
+              <picture>
+                <source srcset="./images/main/photocard4-desktop.jpg 1x, ./images/main/photocard4-desktop@2x.jpg 2x"
+                  media="(min-width:1200px)">
+                <source srcset="./images/main/photocard4-tablet.jpg 1x, ./images/main/photocard4-tablet@2x.jpg 2x"
+                  media="(min-width:768px)">
+                <source srcset="./images/main/photocard4-mobile.jpg 1x, ./images/main/photocard4-mobile@2x.jpg 2x"
+                  media="(min-width:320px)">
+               <img 
                 class="team-list-card"
-                src="./images/main/photocard4.jpg"
+                src="./images/main/photocard4-mobile.jpg"
                 alt="Михаил Ермаков"
-                width="270"
-                height="260"
+                
               />
+              </picture>
               <h3>Михаил Ермаков</h3>
               <p lang="en">UI Designer</p>
               <div class="social-links-team">
@@ -459,8 +536,10 @@
           </ul>
         </div>
       </section>
-      <!--CLIENTS-->
-      <section class="clients">
+         -->
+     <!-----------------------------CLIENTS---------------------------> 
+        
+      <!-- <section class="clients">
         <div class="clients-container container">
           <h2>Постоянные клиенты</h2>
           <ul class="clients-list list">
@@ -508,10 +587,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!--FOOTER-->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer-logo-container">
           <div class="footer-logo">
@@ -596,8 +675,9 @@
 
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- Ставим перед закрывающим тегом body -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -10,6 +10,9 @@
     .features & {
       padding: 60px 15px;
     }
+    .team & {
+      padding: 60px 15px;
+    }
   }
 }
 @media screen and (min-width: 768px) {
@@ -18,8 +21,6 @@
     width: 768px;
     margin: 0 auto;
     .features & {
-      // display: flex;
-      // flex-wrap: wrap;
       padding: 60px 15px;
     }
   }

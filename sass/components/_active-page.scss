@@ -16,6 +16,26 @@
     color: $accent-color;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .active::after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+
+    left: 0;
+    bottom: -20px;
+
+    position: absolute;
+    background-color: $accent-color;
+    border-radius: 4px;
+  }
+  .active {
+    color: $accent-color;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .active::after {
     content: '';

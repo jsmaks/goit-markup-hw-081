@@ -3,7 +3,7 @@
   // outline: 1px solid red;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
     width: 480px;
     margin: 0 auto;
@@ -13,15 +13,34 @@
     .team & {
       padding: 60px 15px;
     }
+    .clients & {
+      padding: 60px 15px;
+    }
+    .footer & {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     // display: flex;
     width: 768px;
     margin: 0 auto;
     .features & {
       padding: 60px 15px;
+    }
+    .clients & {
+      padding: 60px 15px;
+    }
+    .team & {
+      padding: 60px 15px;
+    }
+    .footer & {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
   }
 }
@@ -62,6 +81,7 @@
       padding-bottom: 94px;
     }
     .footer & {
+      display: flex;
       align-items: center;
     }
   }

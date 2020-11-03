@@ -1,0 +1,25 @@
+@media screen and (max-width: 767px) {
+  .menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    margin-left: auto;
+    background-color: transparent;
+    // @media screen and (min-width: 768px) {
+    //   display: none;
+    // }
+  }
+  .menu-button .icon-cross {
+    width: 18px;
+    height: 18px;
+    display: none;
+  }
+  .menu-button.is-open .icon-cross {
+    display: block;
+  }
+
+  .menu-button.is-open .icon-menu {
+    display: none;
+  }
+}

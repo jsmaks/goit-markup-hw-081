@@ -362,6 +362,9 @@ img {
   .team .container {
     padding: 60px 15px;
   }
+  .portfolio .container {
+    padding: 60px 15px;
+  }
   .footer .container {
     display: flex;
     flex-wrap: wrap;
@@ -1220,7 +1223,7 @@ body.modal-open {
     height: 5px;
     width: 100%;
     left: 0;
-    bottom: -20px;
+    bottom: -30px;
     position: absolute;
     background-color: #2196f3;
     border-radius: 4px;
@@ -1350,6 +1353,7 @@ body.modal-open {
     z-index: 1000;
     background-color: white;
     width: 100%;
+    border: 1px solid #eeeeee;
   }
   .menu-navigation {
     text-align: center;
@@ -1432,10 +1436,14 @@ body.modal-open {
     display: flex;
     align-items: center;
   }
+  .header {
+    height: 80px;
+    border-bottom: 1px solid #eeeeee;
+  }
   .navigation {
     display: flex;
     align-items: center;
-    height: 60px;
+    height: 80px;
   }
   .navigation__list {
     margin-right: 82px;
@@ -1496,7 +1504,7 @@ body.modal-open {
   .header {
     padding-top: 24px;
     padding-bottom: 24px;
-    border: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
   }
   .address-list {
     display: flex;

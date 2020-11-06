@@ -1398,33 +1398,6 @@ body.modal-open {
   }
 }
 
-.hero {
-  background-color: #2f303a;
-}
-
-.hero-page {
-  position: relative;
-  z-index: 2;
-  padding: 5%;
-  padding-top: 118px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.hero-title {
-  text-align: center;
-  font-size: 26px;
-  line-height: 1.615;
-  font-weight: 900;
-  letter-spacing: 0.06em;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
 @media screen and (max-width: 767px) {
   .hero {
     background-color: #2f303a;

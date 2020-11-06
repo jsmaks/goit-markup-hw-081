@@ -1,28 +1,28 @@
-.hero {
-  background-color: #2f303a;
-  &-page {
-    position: relative;
-    z-index: 2;
-    padding: 5%;
-    padding-top: 118px;
-    // padding: 118px 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  &-title {
-    text-align: center;
-    font-size: 26px;
-    line-height: 1.615;
-    font-weight: 900;
-    letter-spacing: 0.06em;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
-}
+// .hero {
+//   background-color: #2f303a;
+//   &-page {
+//     position: relative;
+//     z-index: 2;
+//     padding: 5%;
+//     padding-top: 118px;
+//     // padding: 118px 60px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//   }
+//   &-title {
+//     text-align: center;
+//     font-size: 26px;
+//     line-height: 1.615;
+//     font-weight: 900;
+//     letter-spacing: 0.06em;
+//     margin-bottom: 30px;
+//     text-transform: uppercase;
+//     color: #ffffff;
+//   }
+// }
 @media screen and (max-width: 767px) {
   .hero {
     background-color: #2f303a;

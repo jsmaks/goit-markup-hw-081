@@ -1,11 +1,20 @@
 .container {
   padding: 0 15px;
   // outline: 1px solid red;
+  .features & {
+    padding: 60px 15px;
+  }
+  .team & {
+    padding: 60px 15px;
+  }
+  .clients & {
+    padding: 60px 15px;
+  }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .container {
-    width: 480px;
+    max-width: 480px;
     margin: 0 auto;
     .features & {
       padding: 60px 15px;
@@ -17,6 +26,7 @@
       padding: 60px 15px;
     }
     .footer & {
+      // max-width: 480px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -26,7 +36,7 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     // display: flex;
-    width: 768px;
+    max-width: 768px;
     margin: 0 auto;
     .features & {
       padding: 60px 15px;
@@ -71,6 +81,8 @@
     }
 
     .hero-page & {
+      height: 600px;
+      max-width: 1600px;
       padding-top: 200px;
       flex-wrap: wrap;
       flex-direction: column;
@@ -86,6 +98,7 @@
     .footer & {
       display: flex;
       align-items: center;
+      justify-content: space-between;
     }
   }
 }

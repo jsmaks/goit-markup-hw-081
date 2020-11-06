@@ -304,6 +304,7 @@ body {
 
 img {
   display: block;
+  width: 100%;
 }
 
 .title-h-white {
@@ -328,9 +329,21 @@ img {
   padding: 0 15px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+.features .container {
+  padding: 60px 15px;
+}
+
+.team .container {
+  padding: 60px 15px;
+}
+
+.clients .container {
+  padding: 60px 15px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .container {
-    width: 480px;
+    max-width: 480px;
     margin: 0 auto;
   }
   .features .container {
@@ -351,7 +364,7 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
-    width: 768px;
+    max-width: 768px;
     margin: 0 auto;
   }
   .features .container {
@@ -395,6 +408,8 @@ img {
     padding-bottom: 47px;
   }
   .hero-page .container {
+    height: 600px;
+    max-width: 1600px;
     padding-top: 200px;
     flex-wrap: wrap;
     flex-direction: column;
@@ -410,6 +425,7 @@ img {
   .footer .container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -788,7 +804,7 @@ img {
   color: #ffffff;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .menu-button {
     display: none;
   }
@@ -1042,7 +1058,7 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .footer {
     padding-bottom: 60px;
     padding-top: 60px;
@@ -1150,7 +1166,7 @@ img {
     margin-bottom: 20px;
   }
   .footer-logo-container {
-    margin-right: 70px;
+    margin-right: 0px;
   }
   .footer-mail-link, .footer-tel-link {
     font-size: 14px;

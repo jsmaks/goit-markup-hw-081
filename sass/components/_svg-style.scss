@@ -1,12 +1,27 @@
 .svg-container {
-  width: 450px;
-  height: 120px;
+  min-height: 120px;
+  width: 100%;
   background: #f5f4fa;
   border-radius: 4px;
-  margin-bottom: 30px;
-  padding: 25px 190px;
+  margin-bottom: 20px;
+  // margin: 0 auto;
+  padding-left: 40%;
+  padding-top: 5%;
+  // padding-right: 50%;
+  // position: absolute;
 }
 
+@media screen and (min-width: 480px) {
+  .svg-container {
+    width: 100%;
+    max-width: 450px;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    padding: 25px 190px;
+  }
+}
 @media screen and (min-width: 768px) {
   .svg-container {
     width: 354px;

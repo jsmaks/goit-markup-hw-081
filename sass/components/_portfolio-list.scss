@@ -1,3 +1,67 @@
+@media screen and (max-width: 479px) {
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .portfolio-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .portfolio-item > a > h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $color-text-title;
+    padding: 0 24px;
+    margin-bottom: 4px;
+  }
+  .portfolio-item-title > p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: $color-text-grey;
+  }
+  .portfolio-item > a > p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: $color-text-grey;
+    padding: 0 24px;
+    padding-bottom: 20px;
+  }
+  .portfolio-item-title > h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $color-text-title;
+    margin-bottom: 4px;
+  }
+  .portfolio-item-link {
+    max-width: 450px;
+    height: 404px;
+  }
+
+  .portfolio-item {
+    /* margin: 0;
+    padding: 0; */
+    /* :not(:nth-last-child(-n + 3)) - кроме последних трех */
+
+    background: #ffffff;
+    max-width: 450px;
+    max-height: 404px;
+  }
+  .portfolio-item-title {
+    border: 1px solid #eeeeee;
+    border-top: none;
+    padding: 20px 24px;
+    width: 100%;
+    height: 110px;
+  }
+}
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .portfolio-list {
     display: flex;

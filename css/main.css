@@ -1430,7 +1430,7 @@ body.modal-open {
     height: 600px;
     max-width: 1600px;
     padding: 118px 204px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/header/header-desktop.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/start-page/header-desktop.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
